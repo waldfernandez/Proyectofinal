@@ -1,0 +1,217 @@
+/*sass --watch ./style/scss/style.scss ./style/css/style.css*/
+
+/* selector universal*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:is(footer, header, main) {
+  justify-content: center;
+}
+
+/*disenios*/
+
+#disenios {
+  width: 100%;
+  margin: 10px;
+  height: 25vh;
+  box-shadow: 5px 5px 15px rgb(223, 114, 136);
+}
+
+#disenios {
+  display: grid;
+}
+.mates {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+.imagenesenlinea {
+  max-width: 420;
+  width: 20%;
+  height: 20vh;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  border: 10px solid #df6868;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.imagenesenlinea img {
+  width: 100%;
+  scroll-snap-align: center;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/*header*/
+header {
+  background-color: rgb(10, 10, 10);
+  padding-left: 20px;
+  top: 0;
+  position: sticky;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header img {
+  width: 60px;
+}
+
+@media (max-whidth: 768px) {
+  header {
+    background-color: rgb(168, 0, 0);
+    position: static;
+    width: 50%;
+  }
+
+  header img {
+    width: 50px;
+  }
+}
+
+/*footer*/
+footer {
+  padding: 20px;
+  border: 1px solid rgb(255, 0, 13);
+  background-color: rgb(206, 116, 116);
+  background-image: url(../imagenes/impresora.png);
+  background-position: right;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+
+.footerColumns {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+footer p {
+  font-size: 10px;
+}
+
+footer .footerEnlaces {
+  color: rgb(0, 4, 247);
+}
+
+
+nav ul {
+  display: inline;
+  height: 100vh;
+  width: 100vw;
+  padding: 0 20px;
+}
+
+nav ul li {
+  display: inline;
+  padding: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(255, 0, 0);
+}
+
+button {
+  background-color: rgb(0, 81, 255);
+}
+
+body {
+  background-color: rgb(171, 173, 173);
+  font-family: "Orbitron", sans-serif;
+}
+
+/**portada**/
+.Presentacion {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+#img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#img {
+  background-image: url('https://1.bp.blogspot.com/-j8_zxEUQVjA/X-peAHqxFoI/AAAAAAABhh4/85ASctuKgiIzwe8k9UgSsEk72Um15ZHhgCLcBGAsYHQ/s1112/5.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.video {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+html {
+  font-size: 62, 5%;
+}
+
+/**Productos**/
+#productos {
+  width: 400px;
+  height: 300px;
+  box-shadow: 5px 5px 15px rgb(223, 114, 136);
+}
+
+#Productos {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+/**icono wpp**/
+.wpp {
+  width: 50px;
+  position: fixed;
+  right: 20px;
+  bottom: 50px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: rgb(0, 0, 0);
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-left: 20px;
+  color: rgb(255, 0, 0);
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+  color: rgb(14, 13, 13);
+  font-size: 2rem;
+}
+
+.fuentegrande {
+  font-size: 40px;
+}
+
+p {
+  font-family: "Orbitron", sans-serif;
+  font-size: 30px;
+}
+
+/*# sourceMappingURL=style.css.map */

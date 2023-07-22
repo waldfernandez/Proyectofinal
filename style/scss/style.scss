@@ -1,0 +1,56 @@
+/*sass --watch ./style/scss/style.scss ./style/css/style.css*/
+
+// loyout
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/navbar";
+
+// components
+@import "./components/button";
+
+// base
+@import "./base/reset";
+@import "./base/typography";
+
+html {
+    font-size: 62, 5%;
+}
+
+
+/**portada**/
+
+.box {
+    height: 200px;
+    width: 50%;
+    background-color: aliceblue;
+    overflow: scroll;
+}
+
+h1 {
+    font-size: 3rem;
+    color: rgb(0, 4, 255);
+    font-weight: 900;
+    padding-left: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    padding-left: 20px;
+}
+
+#Portada {
+    color: rgb(0, 17, 255);
+}
+
+.fuentegrande {
+    font-size: 40px;
+}
+
+#Home h2 {
+    color: rgb(10, 145, 235);
+}
+
+p {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 30px;
+}
